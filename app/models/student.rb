@@ -1,7 +1,7 @@
 class Student < ActiveRecord::Base 
   
   def to_s
-    @student = self.join
+    self.first_name + " " + self.last_name
   end 
   
 end 
